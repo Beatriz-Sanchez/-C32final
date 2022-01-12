@@ -19,11 +19,8 @@ class Boat {
   animate() {
     this.speed += 0.05 % 1.1;
   }
-
-   remove(index) {
-      Matter.World.remove(world, boats[index].body);
-      boats.splice(index, 1);
-    
+    //criar função remove()
+  
   }
   display() {
     var angle = this.body.angle;
